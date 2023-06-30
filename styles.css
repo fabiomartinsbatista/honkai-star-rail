@@ -1,0 +1,297 @@
+@charset "UTF-8";
+
+@import url('https://www.dafont.com/pt/space-mission.font?text=HONKAI+STAR+RAIL');
+
+@font-face {
+  font-family:'SPACE MISSION';
+  src: url("fonte/SPACE\ MISSION.otf") format('OpenType');}
+
+:root {
+  --fonte1: "SPACE MISSION"  
+}
+
+
+
+
+
+
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+  }
+  
+  /* Estilos do cabeçalho */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 0px;
+
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Estilos do hero section */
+  .hero {
+    background-color: #f2f2f2;
+    padding: 80px 0;
+    text-align: center;
+    background-image: url('imagem/wp11318755.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+
+
+  .container-video {
+    display: flex;
+    justify-content: end;
+    padding-right: 0px;
+  }
+  
+  video {
+    width: 370px;
+    height: 208px;
+    border: 1px solid yellow;
+    border-radius: 4px;
+  }
+
+  p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h3 {
+    color: yellow;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .hero h2 {
+    font-size: 42px;
+    color: rgb(255, 255, 0);
+    font-family: var(--fonte1);
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color:blue;
+    color: yellow;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  /* Estilos da seção de recursos */
+  .features {
+    padding: 10px 0;
+    background-color: black;
+  }
+  
+  .feature {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .feature img {
+    width: 0p;
+    height: 360px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos do rodapé */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /*estilo do menu*/
+
+  menu {
+    display: block;
+}
+
+menu > ul {
+    list-style-type: none;
+    margin-left: -80px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
+
+i#burguer {
+    background-color: blue;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+menu {
+       display: none;
+}
+
+
+i#burguer:hover {
+    background-color: blue;
+    color: rgb(251, 255, 32);
+}
+
+menu > ul > li > a {
+
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgba(1, 1, 158, 0.507);
+    color: white;
+    border-top: 2px solid yellow;
+    text-align: center;
+}
+
+menu > ul > li > a:hover {
+background-color: rgb(46, 46, 248);
+}
+
+
+/*carrossel*/
+
+img {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  height: 470px;
+  width: 370px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.image-container {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: blue;
+  color: yellow;
+  border: none;
+  padding: 0.4rem;
+  cursor: pointer;
+  width: 49.5%;
+}
+
+
+
+.btn-2 {
+  background-color: blue;
+  color: yellow;
+  border: none;
+  padding: 0.6rem;
+  cursor: pointer;
+  width: 49.5%;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+
+
+
+/*ultimo container*/
+
+.comunidade1 {
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+
+.container-comunidade {
+  margin-top: 24px;
+  width: 100%;
+  display: block;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.weapon {
+  display: flex;
+  align-items: end;
+  background: #27272e;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.weapon-comu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.weapon-comu h3 {
+  font-family: "Cinzel", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 32px;
+  line-height: 43px;
+}
+
+.weapon-comu p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.image-weapon {
+  height: 150px;
+  width: 220px;
+}
+
+a{
+  
+  color: white;
+}
+
+ 
